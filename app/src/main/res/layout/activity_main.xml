@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:segmentcontrol="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.lyue.aw_selectorview.segmentcontrol.SegmentControl
+        android:id="@+id/segment_control"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:textSize="13sp"
+        segmentcontrol:colors="@color/colorPrimary"
+        segmentcontrol:cornerRadius="5dp"
+        segmentcontrol:direction="horizon"
+        segmentcontrol:horizonGap="8dp"
+        segmentcontrol:texts="我的好友|同学|同事|老师"
+        segmentcontrol:verticalGap="8dp" />
+
+    <FrameLayout
+        android:id="@+id/layFragme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/segment_control" />
+</RelativeLayout>
